@@ -1,0 +1,57 @@
+.column {
+    float: left;
+    width: 16%;
+    padding: 0 10px;
+  }
+  
+  h4.viewall {
+    float: right;
+    margin-right: 3%;
+    color: gray;
+  }
+
+  h4.title {
+    float: left;
+    margin-left: 3%;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .smallCaroselContainer {
+    background-color: #1E1C20;
+    width: 100%;
+  }
+
+  img.cardCaroselImage {
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+  /* Remove extra left and right margins, due to padding */
+  .rowCarosel {
+     margin-left: 50px;
+     margin-right: 50px;
+     padding: 100px;
+    }
+  
+  /* Clear floats after the columns */
+  .rowCarosel:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border-radius: 25px;
+  }

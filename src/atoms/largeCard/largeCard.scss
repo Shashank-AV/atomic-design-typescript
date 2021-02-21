@@ -1,0 +1,59 @@
+.column {
+    float: left;
+    width: 16%;
+    padding: 0 10px;
+  }
+  
+  h4.viewall {
+    float: right;
+    margin-right: 3%;
+    color: gray;
+  }
+
+  h4.title {
+    float: left;
+    margin-left: 3%;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .smallContainer {
+    background-color: #262931;
+    width: 100%;
+  }
+
+  img.largecardImage {
+    width: 1000px;
+    height: 800px;
+    border-radius: 25px;
+    margin: 0 150% 0 150%;
+    margin-top: 25px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+     margin-left: 50px;
+     margin-right: 50px;
+     padding: 10px;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 300px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border-radius: 25px;
+  }
